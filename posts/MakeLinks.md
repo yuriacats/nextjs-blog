@@ -4,13 +4,13 @@ date: '2021-06-10'
 ---
 
 ## 課題
-メインキーボードとして[ErgoEZ]("https://ergodox-ez.com/") を使っているが、
+メインキーボードとして[ErgoEZ](https://ergodox-ez.com/) を使っているが、
 Windowsで最適なキーバインドとマックで最適なキーバインドだと大きな差がありその部分を埋めたい
 せっかくレイヤー機能もあることだしWindowsとMacでキー配列を独自に入れ替えたらいいのではないだろうか
 という仮説に至った。
 
 ## レイアウトで工夫した点
-[レイアウトURL]("https://configure.zsa.io/ergodox-ez/layouts/GZqEw/latest/0") \
+[レイアウトURL](https://configure.zsa.io/ergodox-ez/layouts/GZqEw/latest/0) \
 レイアウトでは、ワンクリックである程度長い時間レイヤーを変えるという操作が必要になってきた。
 この時に使うのが「TT（レイヤー番号）」というキーバインドである。
 キーバインドには以下の５種類のキーバインドがある。
@@ -38,4 +38,4 @@ TGの時の動きよりもTTの時の動きの方が自分にはしっくりき�
 ---
 
 参考サイト
-- [Getting Started With Your New ErgoDox EZ]("https://ergodox-ez.com/pages/getting-started")
+- [Getting Started With Your New ErgoDox EZ](https://ergodox-ez.com/pages/getting-started

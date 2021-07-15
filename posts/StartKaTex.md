@@ -3,12 +3,12 @@ title: 'KaTexをブログに導入した話'
 date: '2021-06-12'
 ---
 
-##　動機
+## 動機
 今回のブログはAWS Lambda＋React製ブログの避難用ブログな訳ですが、
 実際のブログでは、数学系の式を使った勉強記録も書きたかったため、数学系ライブラリーが導入されている。避難用とはいえこちらにもライブラリーの導入の必要性があった。
 
 ## 環境
-[QiitaのNextJSチュートリアルの翻訳記事]("https://qiita.com/thesugar/items/01896c1faa8241e6b1bc") の終わった直後の環境
+[QiitaのNextJSチュートリアルの翻訳記事](https://qiita.com/thesugar/items/01896c1faa8241e6b1bc) の終わった直後の環境
 ここをベースにMath系ライブラリーを加えて動かせるようにしよう。
 
 ~~~json
