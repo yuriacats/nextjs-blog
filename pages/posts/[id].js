@@ -30,6 +30,7 @@ export default function Post({postData}) {
             <div className={utilStyles.lightText}>
                 <Date dateString={postData.date}/>
             </div>
+            <p className={"read-times"} style={{textAlign:'center'}}>このテキストは{postData.readTimes}分で読めます。</p>
             <div dangerouslySetInnerHTML={{ __html: postData.contentHtml}} />
         </Layout>
     )

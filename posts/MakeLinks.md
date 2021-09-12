@@ -38,4 +38,4 @@ TGの時の動きよりもTTの時の動きの方が自分にはしっくりき�
 ---
 
 参考サイト
-- [Getting Started With Your New ErgoDox EZ](https://ergodox-ez.com/pages/getting-started
+- [Getting Started With Your New ErgoDox EZ](https://ergodox-ez.com/pages/getting-started)
