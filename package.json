@@ -8,20 +8,20 @@
     "start": "next start"
   },
   "dependencies": {
+    "date-fns": "^2.22.1",
+    "fs": "^0.0.1-security",
+    "gray-matter": "^4.0.3",
     "next": "10.x",
+    "path": "^0.12.7",
     "react": "17.x",
     "react-dom": "17.x",
-    "sass": "^1.35.2",
-    "gray-matter": "^4.0.3",
-    "fs": "^0.0.1-security",
-    "path": "^0.12.7",
-    "remark": "^13.0.0",
-    "remark-html": "^13.0.1",
-    "date-fns": "^2.22.1",
-   "remark-math": "^4.0.0",
     "rehype-katex": "^5.0.0",
-    "remark-rehype": "^8.1.0",
     "rehype-stringify": "^8.0.0",
-    "remark-highlight.js": "^6.0.0"
+    "remark": "^13.0.0",
+    "remark-highlight.js": "^6.0.0",
+    "remark-html": "^13.0.1",
+    "remark-math": "^4.0.0",
+    "remark-rehype": "^8.1.0",
+    "sass": "^1.35.2"
   }
 }
