@@ -2,12 +2,16 @@ import Head from 'next/head'
 import styles from './layout.module.scss'
 import utilStyles from '../styles/utils.module.scss'
 import Link from 'next/link'
+import React from 'react'
 
-const name = '上原ゆりあ'
-export const siteTitle = 'Next.js Sample Website'
+const name: string = 'yuriacats'
+export const siteTitle: string = 'Yuria Uehara\'s Home page'
 
-export default function Layout({ children, home }) {
-    return (
+const Layout: React.FunctionComponent<{
+    children: React.ReactNode;
+    home?: boolean;
+}> = ({ children, home }) => {
+     return (
         <div className={styles.container}>
             <Head>
                 <link rel="icon" href="/favicon.ico" />
@@ -69,3 +73,4 @@ export default function Layout({ children, home }) {
         </div>
     )
 }
+export default Layout;

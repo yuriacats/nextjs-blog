@@ -1,27 +1,30 @@
 import Head from 'next/head'
 import Layout, { siteTitle } from '../components/layout'
 import utilStyles from '../styles/utils.module.scss'
-import {getSortedPostData} from '../lib/posts'
+import {getSortedPostData, allPostsData} from '../lib/posts'
 import Link from 'next/link'
 import Date from '../components/date'
 
-export async function getStaticProps(){
-    const allPostsData = getSortedPostData()
+
+export const getStaticProps = () => {
+    const allPostsData = getSortedPostData();
     return{
         props:{
-            allPostsData
+            allPostsData,
         }
     }
 }
 
-export default function Home({ allPostsData }) {
+const Home = ({ allPostsData }
+    :{ allPostsData:allPostsData}
+    ):JSX.Element => {
     return (
         <Layout home>
             <Head>
                 <title>{siteTitle}</title>
             </Head>
             <section className={utilStyles.headingMd}>
-                <p>慶應義塾大学環境情報学部４年/なんでも作れるWEBエンジニア志望</p>
+                <p>SFC卒/Web系エンジニア/料理が好き/どちらかというと犬派</p>
 
             </section>
             <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
@@ -43,3 +46,4 @@ export default function Home({ allPostsData }) {
         </Layout>
     )
 }
+export default Home;

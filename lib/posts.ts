@@ -12,16 +12,26 @@ import highlight from 'remark-highlight.js';
 
 const postsDirectory =path.join(process.cwd(),'posts')
 
-export function getSortedPostData(){
-    const fileNames = fs.readdirSync(postsDirectory)
-    const allPostsData = fileNames.map(fileName =>{
-    const id = fileName.replace(/\.md$/,'')
-    const fullPath = path.join(postsDirectory, fileName)
-    const fileContents = fs.readFileSync(fullPath,'utf-8')
+export type allPostsData = {
+    id:string,
+    date:string,
+    title:string,
+}[]
 
-    const matterResult =matter(fileContents)
+export const getSortedPostData = () => {
+    const fileNames = fs.readdirSync(postsDirectory)
+    const allPostsData: allPostsData = fileNames.map(fileName =>{
+        const id = fileName.replace(/\.md$/,'')
+        const fullPath = path.join(postsDirectory, fileName)
+        const fileContents = fs.readFileSync(fullPath,'utf-8')
+
+        const matterResult =matter(fileContents)
+        const date:string = matterResult.data.date
+        const title:string = matterResult.data.title
         return{
             id,
+            date,
+            title,
             ...matterResult.data
         }
     })
