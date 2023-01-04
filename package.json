@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@auth0/nextjs-auth0": "^2.0.1",
+    "@types/styled-components": "^5.1.26",
     "date-fns": "^2.22.1",
     "fs": "^0.0.1-security",
     "gray-matter": "^4.0.3",
@@ -23,7 +24,8 @@
     "remark-html": "^13.0.1",
     "remark-math": "^4.0.0",
     "remark-rehype": "^8.1.0",
-    "sass": "^1.35.2"
+    "sass": "^1.35.2",
+    "styled-components": "^5.3.6"
   },
   "devDependencies": {
     "@types/node": "^18.7.8",
