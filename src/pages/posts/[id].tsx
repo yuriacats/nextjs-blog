@@ -3,6 +3,7 @@ import Head from "next/head";
 import {getAllPostIds, getPostData} from "../../lib/posts";
 import Date from '../../components/date';
 import utilStyles from '../../styles/utils.module.scss';
+import ReadTimeDescriber from "../../atoms/ReadTimeDescriber";
 export async function getStaticPaths(){
     const paths = getAllPostIds()
     return{
@@ -30,7 +31,7 @@ export default function Post({postData}) {
             <div className={utilStyles.lightText}>
                 <Date dateString={postData.date}/>
             </div>
-            <p className={"read-times"} style={{textAlign:'center'}}>このテキストは{postData.readTimes}分で読めます。</p>
+            <ReadTimeDescriber readTimes={postData.readTimes}/>
             <div dangerouslySetInnerHTML={{ __html: postData.contentHtml}} />
         </Layout>
     )
