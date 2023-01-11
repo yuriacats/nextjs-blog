@@ -9,3 +9,8 @@ export default {
 const Template: ComponentStory<typeof Date> = (args) => <Date {...args}/>;
 
 export const Default: ComponentStory<typeof Date> = Template.bind({});
+
+Default.args ={
+    dateString:"1998-05-16"
+}
+Default.storyName="Default"
