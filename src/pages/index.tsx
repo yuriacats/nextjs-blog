@@ -3,7 +3,7 @@ import Layout, { siteTitle } from '../components/layout'
 import utilStyles from '../styles/utils.module.scss'
 import {getSortedPostData, allPostsData} from '../lib/posts'
 import Link from 'next/link'
-import Date from '../components/date'
+import Date from '../atoms/date'
 
 
 export const getStaticProps = () => {
